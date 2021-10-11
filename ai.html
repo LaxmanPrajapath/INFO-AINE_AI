@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+
+    <style>
+        .body{
+            color: yellowgreen;
+        }
+        .top-header{
+            height:90px;
+            width:1536px;
+            background-color:white;
+        }
+        .left-nav-bar {
+            float: left; 
+            border: 0px solid #ccc;
+            background-color: rgb(255, 253, 253);
+            width: 100px;
+            height: 660px;
+            box-shadow: 5px 0px 5px #cec9c9;
+            background-color: white;
+        }
+        .left-nav-bar button {
+            display: block;
+            background-color: inherit;
+            color: #4b5658;
+            padding: 25px 25px 25px 25px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 12px;
+        }
+        .left-nav-bar button:hover {
+            background-color: rgba(50, 115, 220, 0.3);;
+            color: black;
+        }
+       .second-division{
+           background-color: rgb(240, 240, 240);
+           height: 660px;
+           width: 1536px;
+       }
+       .container{
+           padding-top: 150px;
+       }
+       .input{
+           padding-left: 20px;
+           width: 1200px;
+           border-radius: 10px;
+           height:40px;
+           border: 0px;
+           text-align-last: left;
+       }
+       .input1{
+           height:150px;
+           width: 150px;
+           border: 0px;
+           padding: 50px;
+       }
+       input::placeholder {
+            color: black;
+            text-align: left;
+       }
+       
+    </style>
+
+</head>
+<body class= "body">
+    <!-- Top Header -->
+    <div class = "top-header">
+        <i class="fa fa-bullseye" aria-hidden="true" 
+                style="font-size:55px;
+                       color: black;
+                       padding-left: 25px;
+                       padding-top: 20px;
+                       box-shadow: 5px 0px 5px #cec9c9;
+                       height: 90px;width: 100px"></i>
+    </div>
+    <div class = "second-division"> 
+    <!-- Left Navigation Bar -->
+        <div class = "left-nav-bar">        
+            <button class = "tablinks">
+                <i class="fa fa-user" aria-hidden="true" style="font-size: 28px;"></i><br>Students
+            </button>
+            <button class = "tablinks" style="Border-left:5px solid blue; background-color: rgba(50, 115, 220, 0.3);">
+                <i class="far fa-book" style="font-size: 28px;"></i><br>LessonPlan
+            </button>
+            <button class = "tablinks">
+                <i class="fa fa-cog" aria-hidden="true" style="font-size: 28px; "></i><br>Settings
+            </button>  
+        </div>
+        <div class = "container" >
+            <div><input class = "input" type = "text"  placeholder = "Insert URL here"/></div>
+            <br>            <p style="text-align: center; color: black;">or</p>
+            <div><input class = "input1" type = "text" placeholder="upload" /></div>
+        </div>
+    </div>
+
+</body>
+</html>
